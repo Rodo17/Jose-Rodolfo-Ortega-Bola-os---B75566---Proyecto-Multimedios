@@ -1,0 +1,57 @@
+.section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__about{
+        background-color: $background;
+    }
+}
+
+.technologies{
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    &__tittle{
+        width: 94%;
+        padding: 2%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgba(13, 110, 139, 1);
+        @include font(30px, $tech_font_title);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+}
+
+.hobbies{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+
+    &__tittle{
+        width: 94%;
+        padding: 2%;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgba(13, 110, 139, 1);
+        @include font(30px, $tech_font_title);
+        color: #fff;
+        font-weight: 700;
+        border-radius: 5px;
+    }
+}
+
+.medias{
+    &__img{
+        cursor: pointer;
+        width: 90px;
+        height: 90px;
+        margin: 20px;
+    }
+}
+

@@ -1,0 +1,16 @@
+.footer{
+    background-color: $background;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__copy{
+        margin-top: 100px;
+        padding: 2%;
+        @include font(20px, $tech_font_title);
+        color: #fff;
+        @media (max-width: 767px) {
+            margin-top: 0;
+        }
+    }
+}

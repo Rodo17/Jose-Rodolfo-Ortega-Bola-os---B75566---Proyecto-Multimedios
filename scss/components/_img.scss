@@ -1,0 +1,67 @@
+/*$technologies: net sharp sqlserver html css sass js jquery python django drupal wordpress java mysql php oracle postgresql;
+@each $tech in $technologies {
+ .image-#{$tech} {
+ background: url("img/#{$tech}.png") no-repeat;
+ }
+}*/
+
+.about_image{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    
+    @media (max-width: 767px) {
+        margin-top: 3%;
+    }
+}
+
+.about_img_A{
+    padding: 2%;
+    background: url('../img/me_v2.jpg');
+    background-size: cover;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 1);
+
+    @media (max-width: 767px) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.about_img_B{
+    padding: 2%;
+    background: url('../img/me_v1.jpg');
+    background-size: cover;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    box-shadow: 0 0 8px 8px rgba(255, 255, 255, 1);
+
+    @media (max-width: 767px) {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
+.image-tech{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    transition: 1s;
+
+    @media (max-width: 767px) {
+        width: 75px;
+        height: 75px;
+    }
+
+    &:hover{
+        cursor: pointer;
+        transform: rotate(360deg);
+    }
+}
